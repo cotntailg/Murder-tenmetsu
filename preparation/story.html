@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>줄거리 - 머더미스 천멸급</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* MaruBuri 폰트 정의: character.html과 동일 */
+        @font-face {
+            font-family: 'MaruBuri';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-ExtraLight.woff2) format('woff2');
+            font-weight: 200;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'MaruBuri';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Light.woff2) format('woff2');
+            font-weight: 300;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'MaruBuri';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'MaruBuri';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-SemiBold.woff2) format('woff2');
+            font-weight: 600;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'MaruBuri';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'MaruBuri', sans-serif;
+            /* 배경 이미지 경로는 index.html과 동일하게 설정합니다. */
+            background-image: url('../assets/images/bg_ch.png'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            padding: 40px 0;
+        }
+        .story-box {
+            background-color: rgba(0, 0, 0, 0.40); /* 어두운 카드 배경 */
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            line-height: 2.0; /* 줄 간격 넓게 설정 */
+        }
+    </style>
+</head>
+<body class="text-white bg-black/60 backdrop-blur-md flex flex-col items-center">
+
+    <div class="max-w-4xl mx-auto p-6 space-y-8 animate-fade-in">
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-extrabold mb-3 drop-shadow-lg">이야기의 줄거리</h1>
+        </header>
+
+        <div class="story-box rounded-xl shadow-2xl p-8 transition">
+            <p class="text-xl font-semibold mb-6">
+                셀레스타인 제국이 자랑하는 건국 150주년 무도회.
+            </p>
+            
+            <p class="text-lg">
+                귀족이나 고위 관직자, 성직자가 모여 화려하게 축복받아야 할 이 밤——</br>
+                한 가지 소식이 파티에 조용한 그림자를 드리운다.</br>            
+</p>
+            <p class="text-lg"></br>
+		화려한 파티 회장에 어울리지 않는, 당황한 기색의 문관이 황태자에게 다가가 은밀하게 귓속말을 한다. </p>
+
+            
+            <blockquote class="my-6 p-4 border-l-4 border-yellow-400 bg-white/10 italic text-xl">
+                “장로 각하께서 시신으로 발견되셨습니다… 그것이 아무래도… 타살인 듯 하여……”
+            </blockquote>
+            
+            <p class="text-lg">
+                가슴에는 단검에 찔린 흔적이 있으나 현장에 흉기가 남아있지 않아, 아무리 봐도 타살임이 황태자에게 알려진다.</br>
+                화려한 축제의 밤 이면에서 제국 의회의 수장이 살해되는 일은 절대로 귀빈들에게 알려져서는 안 된다. 
+            </p>
+            
+            <p class="text-lg mt-4 font-bold text-orange-400">
+                황태자는 기사단장, 마탑주, 공작영애, 성녀, 당주를 불러 은밀히 조사를 시작했다.
+            </p>
+            
+            <p class="text-lg mt-4">
+                그들 모두는 제국의 미래를 좌우할 만큼의 지위와 영향력을 가진 인물들이다.
+            </p>
+
+            <p class="text-xl mt-8 font-extrabold text-center text-red-300 drop-shadow-lg">
+                화려한 무도회의 뒤에 숨겨진 음모와 비밀.</br>
+                엇갈린 운명이 춤추는 무도회가 지금 막을 올린다—.
+            </p>
+        </div>
+
+        <div class="pt-8 text-center">
+            <a href="index.html" class="inline-block bg-white/20 hover:bg-white/30 text-white font-bold py-3 px-6 rounded-full transition shadow-lg">
+                &larr; 메인 페이지로 돌아가기
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
