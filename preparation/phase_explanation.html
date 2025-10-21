@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>페이즈 설명(진행순)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 정의: MaruBuri 웹폰트 적용 */
+        @font-face {
+            font-family: 'MaruBuri';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'MaruBuri';
+            src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'MaruBuri', sans-serif;
+            background-color: #1a1a2e;
+            color: #e4e4e7;
+            line-height: 1.7;
+            padding: 40px 0;
+        }
+        .main-container {
+            background-color: rgba(37, 40, 59, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .phase-title {
+            color: #ffbf00; /* 황금색 강조 */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .phase-box { /* 새로운 섹션 통합 박스 스타일 */
+            background-color: rgba(55, 65, 81, 0.4);
+            border-left: 4px solid #ffbf00;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        .rule-item {
+            padding: 0.5rem 0;
+        }
+        .note {
+            color: #d1d5db;
+            font-style: italic;
+        }
+        /* 강조 표시 (빨간색) */
+        .highlight {
+            color: #EF4444; /* Tailwind red-500 */
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="p-8">
+
+    <div class="max-w-3xl mx-auto main-container p-8">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-extrabold text-white mb-3">페이즈 설명</h1>
+        </header>
+
+        <!-- 1. 자유 조사 1, 2 -->
+        <section class="mb-10">
+            <h2 class="phase-title text-2xl font-bold border-b">자유 조사 1, 2</h2>
+            <div class="phase-box space-y-4 text-lg">
+                <div class="rule-item">
+                    각 플레이어는 임의의 순서로 원하는 정보 카드를 1장씩 총 2장 획득합니다. 이때 카드를 공개하거나 토론을 하는 것은 불가능합니다.
+                </div>
+                <div class="rule-item">
+                    <span class="highlight">단, 자신의 캐릭터 카드는 스스로 가져올 수 없습니다.</br>
+                    ※ 카드 양도로 다른 캐릭터로부터 자신의 캐릭터 카드를 받는 것은 가능합니다.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 전체 회의 1, 2  -->
+        <section class="mb-10">
+            <h2 class="phase-title text-2xl font-bold border-b">전체 회의 1, 2</h2>
+            <div class="phase-box space-y-4 text-lg">
+                <div class="rule-item">
+                    획득한 정보 카드를 바탕으로 자유롭게 토론을 진행합니다. 카드 공개, 카드 양도, 그리고 밀담이 가능합니다.
+                </div>
+                <div class="rule-item">
+                    <span class="highlight">단, 밀담을 할 경우 밀담에 참여하는 각 캐릭터의 '소문 카드'를 GM이 무작위로 1장씩 전원에게 공개합니다.</span>
+                </div>
+                <div class="rule-item">
+                    밀담을 하더라도 전체 타이머는 멈추지 않고, 그대로 진행됩니다.
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 무도회 -->
+        <section class="mb-10">
+            <h2 class="phase-title text-2xl font-bold border-b">무도회</h2>
+            <div class="phase-box space-y-4 text-lg">
+                <div class="rule-item">
+                    남성 캐릭터(황태자, 기사단장, 마탑주)가 여성 캐릭터(공작영애, 성녀, 당주)를 춤에 초대하여 밀담을 할 수 있습니다.
+                </div>
+                <div class="rule-item">
+                    춤 초대를 받은 여성 캐릭터는 그 초대를 받아들일지 여부를 스스로 결정할 수 있습니다. 동일한 여성 캐릭터를 여러 명이 동시에 초대했다면, 그 여성 캐릭터가 누구의 제안을 받을지 선택합니다.
+                    <p class="note mt-2 pl-4">(예: 황태자와 기사단장이 동시에 공작영애를 초대했다면, 공작영애는 두 사람 중 한 명을 선택하거나, 아예 거절할 수도 있습니다.)</p>
+                </div>
+                <div class="rule-item">
+                    거절당한 남성 캐릭터는 이후 다른 여성 캐릭터에게 신청할 수 있으나, 한 번 거절한 캐릭터에게는 다시 신청할 수 없습니다. 거절 상황에 따라, 아무와도 춤을 추지 못하는 캐릭터가 생길 수도 있습니다.
+                </div>
+                <div class="rule-item">
+                    무도회는 밀담으로 간주되지만, 소문 카드는 공개하지 않습니다.
+                </div>
+                <div class="rule-item">
+                    5분이 경과한 시점에서, 다시 한번 상대를 정할 수 있는 기회가 주어집니다. 1차에서 거절당했던 상대에게는 다시 신청이 가능하지만, 1차에서 춤을 추었던 상대에게는 다시 신청할 수 없습니다.
+                </div>
+                <div class="rule-item">
+                    <span class="highlight">또한, 댄스 파트너를 찾지 못한 캐릭터는 해당 5분간 발언이나 카드와 관련된 행동을 할 수 없습니다.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 자유 조사 3 -->
+        <section>
+            <h2 class="phase-title text-2xl font-bold border-b">자유 조사 3</h2>
+            <div class="phase-box space-y-4 text-lg">
+                <div class="rule-item">
+                    각 플레이어는 추가 정보 카드를 1장 획득합니다.
+                </div>
+                <div class="rule-item">
+                    이때 카드를 공개하거나 토론하는 것은 불가능합니다.
+                </div>
+            </div>
+        </section>
+        
+    </div>
+
+</body>
+</html>
