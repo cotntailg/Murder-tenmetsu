@@ -15,26 +15,26 @@
             color: #e4e4e7;
             line-height: 1.6;
             min-height: 100vh;
-            padding: 40px 0;
+            /* 💡 수정: body의 기본 패딩 40px 0 제거 */
+            padding: 0; 
+            margin: 0; /* 💡 수정: 브라우저 기본 마진 제거 */
+            overflow-x: hidden; /* 가로 스크롤 방지 */
         }
-        .page-container {
-            background-color: rgba(37, 40, 59, 0.95);
-            border-radius: 12px;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
-            padding: 2.5rem;
-            max-width: 800px;
-            margin: auto;
-        }
+        /* 💡 수정: .page-container 스타일 제거 (웹툰이 꽉 차야 하므로) */
+        
         .webtoon-img {
             width: 100%;
             display: block;
             margin-bottom: 0px; /* 이미지를 붙여서 스크롤되도록 간격 제거 */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: none; /* 이미지 경계의 그림자 제거 (선택 사항) */
+        }
+        /* 💡 추가: 이미지 로드 시 흰색 공백이 생기는 것을 방지 */
+        html {
+            overflow-x: hidden;
         }
     </style>
 </head>
-<body class="p-8">
-
+<body class="bg-gray-900"> 
         <div class="webtoon-area">
             <img class="webtoon-img" src="../assets/images/Gawelius_ADD_1.jpg" alt="기사단장 과거 회상 1">
             <img class="webtoon-img" src="../assets/images/Gawelius_ADD_2.jpg" alt="기사단장 과거 회상 2">
@@ -42,7 +42,7 @@
             <img class="webtoon-img" src="../assets/images/Gawelius_ADD_4.jpg" alt="기사단장 과거 회상 4">
         </div>
 
-        <div class="mt-10 text-center">
+        <div class="py-10 text-center">
             <a href="ho2_goals.html" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold py-3 px-8 rounded-full transition shadow-lg">
                 새롭게 갱신된 목표와 방침 확인 &rarr;
             </a>
