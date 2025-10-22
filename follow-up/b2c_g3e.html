@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>전생의 기억의 단편</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 정의: MaruBuri 웹폰트 적용 */
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2'); font-weight: 700; font-display: swap; }
+        
+        /* 배경 및 기본 스타일 */
+        body { 
+            font-family: 'MaruBuri', sans-serif; 
+            background-color: #1a1a2e; 
+            color: #e4e4e7; 
+            line-height: 1.7; 
+            min-height: 100vh; 
+            padding: 20px 0; 
+            margin: 0;
+        }
+        .page-container {
+            background-color: rgba(37, 40, 59, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+            /* 기본 패딩 */
+            padding: 1.5rem; 
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        /* 💡 모바일 여백 최소화 */
+        @media (max-width: 639px) { 
+            .page-container {
+                padding: 1rem 0.75rem; /* 좌우 12px 여백 */
+                margin: 0 0.5rem; /* 좌우 8px 마진 */
+            }
+        }
+        
+        .content-box {
+            background-color: rgba(96, 165, 250, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #8B5CF6; /* 마탑주 테마 색상 강조 (Violet 500) */
+        }
+        .highlight {
+            color: #8B5CF6; /* 마탑주 테마 색상 (Violet 500) */
+            font-weight: 700;
+        }
+        .main-text {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+        }
+        .tool-text {
+            color: #d1d5db;
+            font-style: italic;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container mx-4 sm:mx-auto">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-white mb-2">전생의 기억의 단편</h1>
+            <p class="text-lg text-gray-400">마탑주</p>
+        </header>
+
+        <div class="content-box">
+            <p class="main-text">
+                당신은 오른손에 <span class="highlight">고순도의 마석</span>, 왼손에 <span class="highlight">브로치</span>를 들고 있다.
+            </p>
+            
+            <p class="main-text tool-text">
+                문득 주위를 보니, 풍경이 변해 있었다.
+            </p>
+            
+            <p class="main-text">
+                하얗고 무기질적인 <span class="highlight">포드(pod)</span>.
+            </p>
+            
+            <p class="main-text text-center my-6">
+                "수고하셨습니다, <span class="highlight">EIARX17</span>. 그럼 편히 쉬세요."
+            </p>
+            
+            <p class="main-text">
+                전혀 슬픔이 묻어나지 않는 동료의 목소리.
+            </p>
+            
+            <p class="main-text tool-text">
+                아, 이건 전생에서 <span class="highlight">학자</span>였던 내가 죽었을 때의 기억이다.
+            </p>
+            
+            <p class="main-text">
+                깨달았을 때에는 점점 의식이 희미해져 가고... 다시 '<span class="highlight">마탑주</span>'인 내 의식으로 돌아왔다.
+            </p>
+            
+            <p class="main-text">
+                하지만 내 안에 번뜩임과도 같은 확신이 자리 잡았다.
+            </p>
+            
+            <p class="main-text text-lg text-yellow-400 font-bold text-center my-6">
+                ‘이 세계의 신은, 죽음에 임박한 자의 시간을 되돌릴 수 있다.’
+            </p>
+            
+            <p class="main-text">
+                왜 그런 생각이 들었는지는 모르겠다. 다만 나는 지금, <span class="highlight">위대한 무언가의 단편</span>에 닿은 기분이 들었다.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

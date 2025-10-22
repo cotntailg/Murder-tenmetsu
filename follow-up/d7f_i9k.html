@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>전생의 기억의 단편</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 정의: MaruBuri 웹폰트 적용 */
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2'); font-weight: 700; font-display: swap; }
+        
+        /* 배경 및 기본 스타일 */
+        body { 
+            font-family: 'MaruBuri', sans-serif; 
+            background-color: #1a1a2e; 
+            color: #e4e4e7; 
+            line-height: 1.7; 
+            min-height: 100vh; 
+            padding: 20px 0; 
+            margin: 0;
+        }
+        .page-container {
+            background-color: rgba(37, 40, 59, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+            padding: 1.5rem; 
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        /* 💡 모바일 여백 최소화 */
+        @media (max-width: 639px) { 
+            .page-container {
+                padding: 1rem 0.75rem; /* 좌우 12px 여백 */
+                margin: 0 0.5rem; /* 좌우 8px 마진 */
+            }
+        }
+        
+        .content-box {
+            background-color: rgba(96, 165, 250, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #e5bf5f; /* 성녀 테마 색상 */
+        }
+        .highlight {
+            color: #e5bf5f; /* 성녀 테마 색상*/
+            font-weight: 700;
+        }
+        .main-text {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+        }
+        .tool-text {
+            color: #d1d5db;
+            font-style: italic;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container mx-4 sm:mx-auto">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-white mb-2">전생의 기억의 단편</h1>
+            <p class="text-lg text-gray-400">성녀</p>
+        </header>
+
+        <div class="content-box">
+            <p class="main-text">
+                당신은 오른손에 <span class="highlight">고순도의 마석</span>, 왼손에 <span class="highlight">브로치</span>를 들고 있다.
+            </p>
+            
+            <p class="main-text tool-text">
+                <span class="highlight">브로치</span>와 <span class="highlight">마석</span>이 반응하고 있는 듯하다.
+            </p>
+            
+            <p class="main-text">
+                이 두 개를 동시에 가진 자는 <span class="highlight">신의 의식 일부와 교신</span>하여, 전생의 죽음 직전의 순간을 체험하게 될 것이라 <span class="highlight">직감</span>했다.
+            </p>
+            
+            <p class="main-text tool-text">
+                나는 항상 신과 소통하며 신탁을 받기 때문에, 아무 일도 일어나지 않은 것일지도 모른다.
+            </p>           
+        </div>
+
+    </div>
+
+</body>
+</html>
