@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>전생 엿보기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 정의: MaruBuri 웹폰트 적용 */
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2'); font-weight: 700; font-display: swap; }
+        
+        /* 배경 및 기본 스타일 */
+        body { 
+            font-family: 'MaruBuri', sans-serif; 
+            background-color: #1a1a2e; 
+            color: #e4e4e7; 
+            line-height: 1.7; 
+            min-height: 100vh; 
+            padding: 20px 0; 
+            margin: 0;
+        }
+        .page-container {
+            background-color: rgba(37, 40, 59, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+            /* 기본 패딩 */
+            padding: 1.5rem; 
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        /* 💡 모바일 여백 최소화 */
+        @media (max-width: 639px) { 
+            .page-container {
+                padding: 1rem 0.75rem; /* 좌우 12px 여백 */
+                margin: 0.5rem 0.5rem; /* 상하 8px, 좌우 8px 마진 */
+            }
+        }
+        
+        .content-box {
+            background-color: rgba(236, 72, 153, 0.1); /* Pink 500의 10% 투명 배경 */
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #EC4899; /* 공작 영애 테마 색상 강조 (Pink 500) */
+        }
+        .highlight {
+            color: #F472B6; /* 공작 영애 테마 색상 (Pink 400) */
+            font-weight: 700;
+        }
+        .main-text {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+        }
+        .dialogue {
+            color: #E4E4E7; /* 일반 텍스트 색상으로 복구 */
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container mx-4 sm:mx-auto">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-white mb-2">전생 엿보기</h1>
+            <p class="text-lg text-gray-400">공작 영애</p>
+        </header>
+
+        <div class="content-box">
+            <p class="main-text">
+               유리 렌즈 너머로 그 인물을 보는 순간, 광경뿐만 아니라 소리까지 들려오는 듯한 착각을 느낀다.
+            </p>
+            
+            <p class="main-text">
+                차가운 비가 내리는 밤길을 여자가 혼자 걸어가고 있다.
+            </p>
+            
+            <p class="main-text">
+                땅은 검거나 회색을 띠고 있으며, 다져진 흙처럼 보이진 않는다.
+            </p>
+            
+            <p class="main-text">
+                주변에는 마차가 보이지 않는다. 그 대신인듯, 상당한 속도로 이동하는 <span class="highlight">바퀴 달린 철 상자 같은 것들</span>이 많이 보인다.
+            </p>
+            
+            <p class="main-text">
+                <span class="highlight">붉은 빛</span>이 앞에서 비추는 가운데, 여자는 터벅터벅 <span class="highlight">흰 줄이 있는 땅</span>에 발을 내딛는다.
+            </p>
+            
+            <p class="main-text">
+                그러자 귀를 거슬리는 <span class="highlight">날카로운 소리</span>를 내며, 대형 철 상자가 여자를 향해 돌진해 왔다.
+            </p>
+            
+            <p class="main-text text-center my-6">
+                여자는 튕겨지듯 얼굴을 들었지만, 다음 순간 그 철 상자에 부딪혀 <span class="font-bold">온몸에서 피를 흘리며 공중으로 날아, 이윽고 땅에 쓰러져 움직이지 않게 되었다.</span>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

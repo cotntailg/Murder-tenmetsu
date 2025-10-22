@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>전생 엿보기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 정의: MaruBuri 웹폰트 적용 */
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2'); font-weight: 700; font-display: swap; }
+        
+        /* 배경 및 기본 스타일 */
+        body { 
+            font-family: 'MaruBuri', sans-serif; 
+            background-color: #1a1a2e; 
+            color: #e4e4e7; 
+            line-height: 1.7; 
+            min-height: 100vh; 
+            padding: 20px 0; 
+            margin: 0;
+        }
+        .page-container {
+            background-color: rgba(37, 40, 59, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+            /* 기본 패딩 */
+            padding: 1.5rem; 
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        /* 💡 모바일 여백 최소화 */
+        @media (max-width: 639px) { 
+            .page-container {
+                padding: 1rem 0.75rem; /* 좌우 12px 여백 */
+                margin: 0.5rem 0.5rem; /* 상하 8px, 좌우 8px 마진 */
+            }
+        }
+        
+        .content-box {
+            background-color: rgba(16, 185, 129, 0.1); /* Emerald 500의 10% 투명 배경 */
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #10B981; /* 당주 테마 색상 강조 (Emerald 500) */
+        }
+        .highlight {
+            color: #34D399; /* 당주 테마 색상 (Emerald 400) */
+            font-weight: 700;
+        }
+        .main-text {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+        }
+        .dialogue {
+            color: #E4E4E7; /* 일반 텍스트 색상 */
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container mx-4 sm:mx-auto">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-white mb-2">전생 엿보기</h1>
+            <p class="text-lg text-gray-400">당주</p>
+        </header>
+
+        <div class="content-box">
+            <p class="main-text">
+                유리 렌즈 너머로 그 인물을 보는 순간, 광경뿐만 아니라 소리까지 들려오는 듯한 착각을 느낀다.
+            </p>
+            
+            <p class="main-text">
+                어두운 밤길. 합승 마차에 귀족같아 보이는 여자와 젊은 남녀, 세명이 타고 있다.
+            </p>
+            
+            <p class="main-text">
+                "너희들, 꼼짝 마라!" 
+            </p>
+            
+            <p class="main-text">
+                <span class="highlight">거친 목소리</span>가 울리자, 마차는 움직임을 멈춘다.
+            </p>
+            
+            <p class="main-text">
+                <span class="highlight">검과 도끼를 든 채 뛰어드는 것은 산적</span> 같았다.
+            </p>
+            
+            <p class="main-text">
+                <span class="highlight">저항할 기운조차 보이지 않던 여자</span>는 밖으로 끌려나와, <span class="highlight">가슴에 검을 찔렸다</span>.
+            </p>
+            
+            <p class="main-text text-center my-6">
+                이윽고 젊은 남자가 필사적으로 젊은 여자를 지키려 애쓰는 것을 곁눈질하며, <span class="font-bold">귀족으로 보이는 여자는 움직이지 않게 되었다.</span>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>

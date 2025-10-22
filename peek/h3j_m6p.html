@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>전생 엿보기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 정의: MaruBuri 웹폰트 적용 */
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2'); font-weight: 700; font-display: swap; }
+        
+        /* 배경 및 기본 스타일 */
+        body { 
+            font-family: 'MaruBuri', sans-serif; 
+            background-color: #1a1a2e; 
+            color: #e4e4e7; 
+            line-height: 1.7; 
+            min-height: 100vh; 
+            padding: 20px 0; 
+            margin: 0;
+        }
+        .page-container {
+            background-color: rgba(37, 40, 59, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+            /* 기본 패딩 */
+            padding: 1.5rem; 
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        /* 💡 모바일 여백 최소화 */
+        @media (max-width: 639px) { 
+            .page-container {
+                padding: 1rem 0.75rem; /* 좌우 12px 여백 */
+                margin: 0.5rem 0.5rem; /* 상하 8px, 좌우 8px 마진 */
+            }
+        }
+        
+        .content-box {
+            background-color: rgba(139, 92, 246, 0.1); /* Violet 500의 10% 투명 배경 */
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #8B5CF6; /* 마탑주 테마 색상 강조 (Violet 500) */
+        }
+        .highlight {
+            color: #C084FC; /* 마탑주 테마 색상 (Violet 400) */
+            font-weight: 700;
+        }
+        .main-text {
+            font-size: 1.15rem;
+            margin-bottom: 1.5rem;
+        }
+        .dialogue {
+            color: #EF4444; /* Red for dialogue */
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container mx-4 sm:mx-auto">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-white mb-2">전생 엿보기</h1>
+            <p class="text-lg text-gray-400">마탑주</p>
+        </header>
+
+        <div class="content-box">
+            <p class="main-text">
+                유리 렌즈 너머로 그 인물을 보는 순간, 광경뿐만 아니라 소리까지 들려오는 듯한 착각을 느낀다.
+            </p>
+            
+            <p class="main-text">
+                <span class="highlight">하얗고 무기질적이며 유리면이 있는 케이스</span> 같은 곳에 들어간 젊어 보이는 남성.
+            </p>
+            
+            <p class="dialogue">
+                "수고하셨습니다, EIARX17. 그럼 안녕히 주무세요."
+            </p>
+            
+            <p class="main-text">
+                전혀 슬픔이 없는 목소리.
+            </p>
+            
+            <p class="main-text">
+                이윽고 <span class="highlight">쉬익 하는 소리</span>와 함께, <span class="highlight">하얀 안개</span> 같은 것이 그 용기 안을 가득 채웠다.
+            </p>
+            
+            <p class="main-text text-center my-6">
+                잠시 후 안개가 걷혔을 때, 그 케이스 안의 남성은 잠든 듯이 움직이지 않게 되어 있었다.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
