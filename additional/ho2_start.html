@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가웰리우스</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 정의 및 공통 스타일 (위에서 정의한 CSS 사용) */
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2'); font-weight: 700; font-display: swap; }
+        body {
+            font-family: 'MaruBuri', sans-serif;
+            background-color: #1a1a2e;
+            color: #e4e4e7;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 40px 0;
+        }
+        .page-container {
+            background-color: rgba(37, 40, 59, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+            padding: 2.5rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .webtoon-img {
+            width: 100%;
+            display: block;
+            margin-bottom: 0px; /* 이미지를 붙여서 스크롤되도록 간격 제거 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="p-8">
+
+        <div class="webtoon-area">
+            <img class="webtoon-img" src="../assets/images/Gawelius_ADD_1.jpg" alt="기사단장 과거 회상 1">
+            <img class="webtoon-img" src="../assets/images/Gawelius_ADD_2.jpg" alt="기사단장 과거 회상 2">
+            <img class="webtoon-img" src="../assets/images/Gawelius_ADD_3.jpg" alt="기사단장 과거 회상 3">
+            <img class="webtoon-img" src="../assets/images/Gawelius_ADD_4.jpg" alt="기사단장 과거 회상 4">
+        </div>
+
+        <div class="mt-10 text-center">
+            <a href="ho2_goals.html" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold py-3 px-8 rounded-full transition shadow-lg">
+                새롭게 갱신된 목표와 방침 확인 &rarr;
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>소지 스킬</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 정의 및 공통 스타일 */
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2'); font-weight: 700; font-display: swap; }
+        body { font-family: 'MaruBuri', sans-serif; background-color: #1a1a2e; color: #e4e4e7; line-height: 1.6; min-height: 100vh; padding: 40px 0; }
+        .page-container {
+            background-color: rgba(37, 40, 59, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+            padding: 2.5rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .section-header { border-bottom: 2px solid #60A5FA; padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: #60A5FA; }
+        .skill-name { color: #34D399; font-size: 1.5rem; font-weight: bold; margin-bottom: 0.5rem; }
+        .skill-detail { background-color: rgba(96, 165, 250, 0.1); padding: 1rem; border-radius: 8px; margin-top: 1rem; }
+        .detail-label { font-weight: bold; color: #9CA3AF; display: inline-block; width: 80px; }
+    </style>
+</head>
+<body class="p-8">
+
+    <div class="page-container">
+
+        <section class="mb-8">
+            <h2 class="section-header text-2xl font-bold">소지 스킬</h2>
+            
+            <p class="skill-name">스킬 '소드 마스터'</p>
+            
+            <div class="skill-detail text-lg space-y-2">
+                <div><span class="detail-label">타이밍:</span> 상시</div>
+                <div><span class="detail-label">횟수:</span> 제한 없음</div>
+                <div><span class="detail-label">효과:</span> 성검 듀란달을 다룰 수 있다.</div>
+            </div>
+        </section>
+
+        <div class="mt-10 text-center">
+            <a href="ho2_goals.html" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-8 rounded-full transition shadow-lg">
+                &larr; 목표와 방침으로 돌아가기
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HO2: 목표와 방침</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 정의 및 공통 스타일 */
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2'); font-weight: 700; font-display: swap; }
+        body { font-family: 'MaruBuri', sans-serif; background-color: #1a1a2e; color: #e4e4e7; line-height: 1.6; min-height: 100vh; padding: 40px 0; }
+        .page-container {
+            background-color: rgba(37, 40, 59, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+            padding: 2.5rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .section-header { border-bottom: 2px solid #EF4444; padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: #EF4444; }
+        .goal-item { background-color: rgba(96, 165, 250, 0.1); padding: 1rem; border-radius: 8px; margin-top: 1rem; }
+        .main-goal { color: #FBBF24; font-weight: bold; }
+        .sub-goal { color: #34D399; font-weight: bold; }
+        /* 💡 빨간색 강조 텍스트 */
+        .red-highlight { color: #EF4444; font-weight: bold; }
+    </style>
+</head>
+<body class="p-8">
+
+    <div class="page-container">
+        <header class="text-center mb-10">
+            <h1 class="text-2xl font-bold text-white mb-2">목표와 방침</h1>
+        </header>
+        
+        <div class="text-center mb-10 pb-6">
+            <p class="text-3xl font-extrabold text-[#60A5FA] mb-4">
+                모든 것을 떠올렸다.<br>
+                지금의 나에게는 진정으로 해야 할 일이 있다.
+            </p>
+        </div>
+
+        <!-- 메인 목표 -->
+        <section class="mb-8">
+            <h2 class="section-header text-2xl font-bold">메인 목표</h2>
+            <div class="goal-item">
+                <p class="main-goal text-xl mb-2">아나스타시아와 함께 살아간다.</p>
+                <ul class="list-disc ml-6 space-y-2 text-lg">
+                    <li>나 자신도, 성녀도 장로 살해범으로 지목되지 않는다 (80점)</li>
+                </ul>
+            </div>
+            <div class="mt-6 text-base space-y-3">
+                <p>아나스타시아와 함께 살아가기 위해선, 먼저 그녀에게 행동을 취할 필요가 있겠지.</p>
+                <p>그리고 내가 왜 그녀를 잊고 있었는지, 왜 이번 생에서는 내 곁에 오지 않았는지도 확인하고 싶다.</p>
+                <p>혹시 나에게 정이 떨어져 버린 걸까?</p>
+                <p>... 설령 그렇다 하더라도, 전생의 감사와 '사랑한다'는 지금의 내 마음은 꼭 전하고 싶다. </p>
+		<p>그리고 가능하다면, 그녀와 함께 미래를 살아가고 싶다.</p>
+            </div>
+        </section>
+
+        <!-- 서브 목표 -->
+        <section class="mb-8">
+            <h2 class="section-header text-2xl font-bold">서브 목표</h2>
+            <div class="goal-item">
+                <p class="sub-goal text-xl mb-2">나에게 저주를 건 상대에게 사회적 제재를 가한다.</p>
+                <ul class="list-disc ml-6 space-y-2 text-lg">
+                    <li>저주를 건 모든 상대의 죄를 고발한다 (20점)</li>
+                </ul>
+            </div>
+            <div class="mt-6 text-base space-y-3">
+                <p>내 눈앞에 더 소중한 사람이 생긴 이상, 더 이상 사람을 죽이겠다는 마음은 사라져 버렸다.</p>
+                <p>하지만 내 마음의 정리를 위해서라도, 어떤 형태로든 제재는 가해야 한다.</p>
+                <p>가능하다면 죄의 증거를 찾아내, 모두 앞에서 고발함으로써 이 복수를 끝내자. </p>
+		        <p>고발을 위해서는 죄의 증거를 찾아내어 쥐고있어야 한다.</p>
+                <!-- 💡 빨간색 강조 적용 -->
+                <p class="red-highlight">가능하다면 아나스타시아에게 사정을 설명하고, 도움을 받는 것도 고려하자.</p>
+            </div>
+        </section>
+
+        <div class="mt-10 text-center flex justify-center space-x-4">
+            <a href="ho2_start.html" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-8 rounded-full transition shadow-lg">
+                &larr; 이전 페이지
+            </a>
+            <a href="ho2_skill.html" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold py-3 px-8 rounded-full transition shadow-lg">
+                소지 스킬 확인 &rarr;
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
