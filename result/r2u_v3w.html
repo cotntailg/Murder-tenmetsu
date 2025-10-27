@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마력 감지 결과</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 폰트 정의: MaruBuri 웹폰트 적용 */
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+        @font-face { font-family: 'MaruBuri'; src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2) format('woff2'); font-weight: 700; font-display: swap; }
+        
+        /* 배경 및 기본 스타일 */
+        body { 
+            font-family: 'MaruBuri', sans-serif; 
+            background-color: #1a1a2e; 
+            color: #e4e4e7; 
+            line-height: 1.7; 
+            min-height: 100vh; 
+            padding: 20px 0; 
+            margin: 0;
+        }
+        .page-container {
+            background-color: rgba(37, 40, 59, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+            padding: 1.5rem; 
+            max-width: 800px;
+            margin: auto;
+        }
+        
+        /* 💡 모바일 여백 최소화 */
+        @media (max-width: 639px) { 
+            .page-container {
+                padding: 1rem 0.75rem;
+                margin: 0.5rem 0.5rem;
+            }
+        }
+        
+        .content-box {
+            background-color: rgba(139, 92, 246, 0.15); /* 마탑주 테마색 (Violet 500) */
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid #8B5CF6; 
+            text-align: center;
+        }
+        .item-name {
+            color: #C084FC; /* Violet 400 */
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        .result-text {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .result-highlight {
+            color: #4ADE80; /* 성공 강조색 (Green) */
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container mx-4 sm:mx-auto">
+        <header class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-white mb-2">마력 감지 결과</h1>
+        </header>
+
+        <div class="content-box">
+            <p class="item-name">[고순도의 마석]</p>
+            
+            <p class="result-text result-highlight">
+                강한 마력 반응이 있습니다.
+            </p>
+            
+            <p class="result-text">
+                마석 중에서도 상당히 순도가 높고, 마력이 강하다는 것을 알 수 있습니다.
+            </p>
+        </div>
+
+        <footer class="mt-10 text-center">
+            <p class="text-sm text-gray-500">스킬 '마력 감지' 결과 기록.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
