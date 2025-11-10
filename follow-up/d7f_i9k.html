@@ -56,6 +56,26 @@
             font-style: italic;
             font-weight: 700;
         }
+	/* 추가: 첫 번째 문장 강조 스타일 */
+        .intro-highlight {
+            background-color: rgba(229, 191, 95, 0.8); /* #ee7a40 (highlight 색상)을 사용해 약간 어두운 배경색 */
+            color: #1a1a2e; /* 텍스트 색상을 어두운색으로 변경하여 대비 강조 */
+            font-weight: 700;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 2px solid #e4e4e7;
+            font-size: 1.25rem; /* 폰트 크기 확대 */
+            line-height: 1.5;
+        }
+	/* 모바일 최적화 */
+        @media (max-width: 639px) {
+            .intro-highlight {
+                padding: 0.75rem 1rem;
+                font-size: 1.15rem;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -67,9 +87,10 @@
         </header>
 
         <div class="content-box">
-            <p class="main-text">
-                당신은 오른손에 <span class="highlight">고순도의 마석</span>, 왼손에 <span class="highlight">브로치</span>를 들고 있다.
+	<p class="intro-highlight">
+                당신은 오른손에 고순도의 마석, 왼손에 브로치를 들고 있다.
             </p>
+            
             
             <p class="main-text tool-text">
                 <span class="highlight">브로치</span>와 <span class="highlight">마석</span>이 반응하고 있는 듯하다.
