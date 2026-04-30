@@ -57,6 +57,45 @@
             color: #EF4444; /* Tailwind red-500 */
             font-weight: 700;
         }
+        /* 모바일 최적화 미디어 쿼리 */
+@media (max-width: 768px) {
+    body {
+        padding: 10px 0; /* 상하 여백 최소화 */
+    }
+    
+    .p-8 {
+        padding: 0.5rem !important; /* body의 기본 패딩 제거 */
+    }
+
+    .main-container {
+        padding: 1.25rem !important; /* 내부 여백 축소 */
+        border-radius: 4px; /* 테두리 곡률을 줄여 공간 확보 */
+    }
+
+    .phase-title {
+        font-size: 1.25rem !important; /* 제목 크기 축소 */
+        margin-bottom: 1rem;
+    }
+
+    .phase-box {
+        padding: 1rem; /* 내부 패딩 축소 */
+        border-left-width: 3px; /* 왼쪽 테두리 얇게 */
+        margin-bottom: 1.5rem;
+    }
+
+    .rule-item {
+        font-size: 1rem; /* 글자 크기 최적화 */
+        line-height: 1.6;
+    }
+
+    section.mb-10 {
+        margin-bottom: 1.5rem !important; /* 섹션 간격 축소 */
+    }
+
+    header.mb-10 {
+        margin-bottom: 1.5rem !important;
+    }
+}
     </style>
 </head>
 <body class="p-8">
