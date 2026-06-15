@@ -15,22 +15,40 @@
             color: #e4e4e7;
             line-height: 1.6;
             min-height: 100vh;
-            /* 💡 수정: body의 기본 패딩 40px 0 제거 */
             padding: 0; 
-            margin: 0; /* 💡 수정: 브라우저 기본 마진 제거 */
+            margin: 0; 
             overflow-x: hidden; /* 가로 스크롤 방지 */
         }
-        /* 💡 수정: .page-container 스타일 제거 (웹툰이 꽉 차야 하므로) */
         
         .webtoon-img {
             width: 100%;
             display: block;
             margin-bottom: 0px; /* 이미지를 붙여서 스크롤되도록 간격 제거 */
-            box-shadow: none; /* 이미지 경계의 그림자 제거 (선택 사항) */
+            box-shadow: none; 
         }
-        /* 💡 추가: 이미지 로드 시 흰색 공백이 생기는 것을 방지 */
         html {
             overflow-x: hidden;
+        }
+
+        /* 💡 오직 버튼(<a> 태그)에만 적용될 플로팅 스타일 */
+        .floating-action-btn {
+            position: fixed !important;
+            bottom: 32px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease, background-color 0.2s ease;
+            z-index: 50;
+            width: calc(100% - 40px); /* 모바일 좌우 여백 */
+            max-width: 360px; /* 버튼이 너무 거대해지지 않도록 제한 */
+        }
+        
+        /* 💡 활성화되었을 때 버튼만 싹 올라오는 효과 */
+        .floating-action-btn.active {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+            pointer-events: auto;
         }
     </style>
 </head>
@@ -39,15 +57,46 @@
             <img class="webtoon-img" src="../assets/images/Gawelius_ADD_1.jpg" alt="기사단장 과거 회상 1">
             <img class="webtoon-img" src="../assets/images/Gawelius_ADD_2.jpg" alt="기사단장 과거 회상 2">
             <img class="webtoon-img" src="../assets/images/Gawelius_ADD_3.jpg" alt="기사단장 과거 회상 3">
-            <img class="webtoon-img" src="../assets/images/Gawelius_ADD_4.jpg" alt="기사단장 과거 회상 4">
+            <!-- 마지막 타겟 이미지 -->
+            <img id="last-cut" class="webtoon-img" src="../assets/images/Gawelius_ADD_4.jpg" alt="기사단장 과거 회상 4">
         </div>
 
-        <div class="py-10 text-center">
-            <a href="ho2_goals.html" class="bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold py-3 px-8 rounded-full transition shadow-lg">
+        <!-- 💡 주변 영역은 그대로 두고, 오직 내부 <a> 태그에만 id와 스타일을 제어합니다 -->
+        <div class="py-16 text-center w-full bg-gray-900">
+            <a href="ho2_goals.html" id="target-btn" class="inline-block bg-[#3B82F6] hover:bg-[#2563EB] text-white font-bold py-4 px-8 rounded-full shadow-xl text-center transition duration-300">
                 새롭게 갱신된 목표와 방침 확인 &rarr;
             </a>
         </div>
-    </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const lastCut = document.getElementById("last-cut");
+            const targetBtn = document.getElementById("target-btn"); // <a> 태그를 직접 타겟팅
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // 마지막 컷이 보이면 '버튼 자체'를 하단 고정으로 띄움
+                        targetBtn.classList.add("floating-action-btn", "active");
+                    } else {
+                        // 위로 다시 올리면 스무스하게 사라짐
+                        targetBtn.classList.remove("active");
+                        
+                        setTimeout(() => {
+                            if (!targetBtn.classList.contains("active")) {
+                                targetBtn.classList.remove("floating-action-btn");
+                            }
+                        }, 500);
+                    }
+                });
+            }, {
+                // 마지막 이미지 상단이 화면 아래에서 20% 정도 올라왔을 때 미리 인지하고 등장
+                rootMargin: "0px 0px -20% 0px",
+                threshold: 0
+            });
+
+            if (lastCut) observer.observe(lastCut);
+        });
+    </script>
 </body>
 </html>
